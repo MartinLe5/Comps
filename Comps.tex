@@ -37,7 +37,9 @@ The simplest simplest test for spatial autocorrelation is joint count analysis \
 
 While this method is simple (conceptually and mathematically), it's simplicity can make it a coarse instrument in some respects.  For instance, the binary attribute (presence or absence), does not measure the strength of association, therefore a polygon with 1 instance is weighted the same as a polygon with 10 instances.  In order to calculate this level of interaction, a more sophisticated measure will be needed, such as Moran's I statistic.  
 
-Moran's I, is more sophisticated than joint-count analysis, by allowing the use of points and  polygons as well as the ability to use any continuous variable rather than binary data.  $Wij$
+Moran's I, is more sophisticated than joint-count analysis, by allowing the use of points and  polygons as well as the ability to use any continuous variable rather than binary data.  The output of Moran's I measures the degree of correlation between the variable $\chi$ and the spatial lag of $\chi$ by averaging the value of $\chi$ in neighbouring regions as determined by the spatial weights matrix. 
+
+Furthermore, the spatial weights table is more customizable to the problem at hand than in Joint-Count Analysis.  Most of the decision process in choosing the distance method for populating the spatial weights table will be influence by the literature.  From the most naive (least subject knowledge/fewest assumptions), the spatial weights table can describe a basic agency matrix (1 or 0) using the rook's or queen's case when dealing with polygons, or in the case of point data, the nearness of the point to it's neighbours ( $wij = 1/dij$ where the matrix is calculated as 1 over the distance of between points) for $n$-number of neighbours.  The adjacency matrix can also be row standardized, or have a distance decay function such as exponential decay.   
 
 
 
