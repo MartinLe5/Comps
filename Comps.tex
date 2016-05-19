@@ -33,6 +33,13 @@ Spatial autocorrelation is at it's heart the application of Tobler's first law o
 
 There are four widely used measures of spatial autocorrelation: Joint count analysis, Moran's I, Geary's C and Getis- ord g statistic (also known in the literature as Hotspot Analysis or High/Low Clustering)
 
+The simplest simplest test for spatial autocorrelation is joint count analysis \cite{LeeWong2001}. This technique measures the strength of association of a phenomenon with regards to presence or absence of a binary attribute in adjacent polygons (ie sum of 1-1, 0-1, 0-0 interactions) vs an expected count that assumes the distribution of polygon counts is randomly distributed. As with many spatial techniques, this measure is sensitive to the border effect since unnecessarily large survey areas or unessessarily small polygons (using dissemination blocks for Canada-wide data location of Tim Hortons franchise locations) can artificially increase the effect of clustering.  The reverse is also true, with too large a spatial aggregation reducing the power of the test to irrelevance (ie. using presence in forward sortation areas polygons).   
+
+While this method is simple (conceptually and mathematically), it's simplicity can make it a coarse instrument in some respects.  For instance, the binary attribute (presence or absence), does not measure the strength of association, therefore a polygon with 1 instance is weighted the same as a polygon with 10 instances.  In order to calculate this level of interaction, a more sophisticated measure will be needed, such as Moran's I statistic.  
+
+Moran's I, is more sophisticated than joint-count analysis, by allowing the use of points and  polygons as well as the ability to use any continuous variable rather than binary data.  $Wij$
+
+
 
 	\pagebreak
 	\bibliographystyle{chicago}
