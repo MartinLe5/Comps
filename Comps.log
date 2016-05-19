@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.4)  19 MAY 2016 12:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.4)  19 MAY 2016 12:47
 entering extended mode
 **Comps.tex
 (Comps.tex
@@ -223,26 +223,31 @@ LaTeX Font Info:    ... okay on input line 17.
 \MPnumerator=\count109
 \makeMPintoPDFobject=\count110
 \everyMPtoPDFconversion=\toks25
-) [1
+)
+Overfull \hbox (1.1487pt too wide) in paragraph at lines 21--22
+[]\T1/cmr/bx/n/12 It is com-monly as-sumed that ag-glom-er-a-tion economies
+ []
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-No file Comps.bbl.
+[1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (Comps.bbl) [2]
 (Comps.aux) ) 
 Here is how much of TeX's memory you used:
- 2624 strings out of 493698
- 31550 string characters out of 3144409
- 87729 words of memory out of 3000000
- 5931 multiletter control sequences out of 15000+200000
- 7023 words of font info for 19 fonts, out of 3000000 for 9000
+ 2629 strings out of 493698
+ 31603 string characters out of 3144409
+ 87754 words of memory out of 3000000
+ 5933 multiletter control sequences out of 15000+200000
+ 7707 words of font info for 20 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  27i,5n,24p,541b,126s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.
 enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Comps.pdf (1 page, 42693 bytes).
+les/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on Comps.pdf (2 pages, 79861 bytes).
 PDF statistics:
- 19 PDF objects out of 1000 (max. 8388607)
+ 26 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
