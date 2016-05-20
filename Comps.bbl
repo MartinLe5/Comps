@@ -1,10 +1,28 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{Anselin}{Anselin}{1995}]{anselin1995local}
+Anselin, L. (1995).
+\newblock {Local Indicators of Spatial Association -- LISA}.
+\newblock {\em Geographical analysis\/}~{\em 27\/}(2), 93--115.
+
+\bibitem[\protect\citeauthoryear{Green, {O'Hagan}, and Lefebvre}{Green
+  et~al.}{2015}]{GreenOLef2014}
+Green, M.~B., S.~{O'Hagan}, and M.~Lefebvre (2015).
+\newblock The economic geography of institutional investment in the united
+  states, 2010.
+\newblock {\em Urban Geography\/}~{\em 36\/}(6), 798--822.
+
 \bibitem[\protect\citeauthoryear{Lee and Wong}{Lee and
   Wong}{2000}]{LeeWong2001}
 Lee, J. and D.~W.-S. Wong (2000).
 \newblock {\em GIS and Statistical Analysis with ArcView.}
 \newblock John Wiley.
+\newblock 208 pages.
+
+\bibitem[\protect\citeauthoryear{Malkiel}{Malkiel}{2005}]{Malkiel2005}
+Malkiel, B.~G. (2005).
+\newblock Reflections on the efficient market hypothesis: 30 years later.
+\newblock ~{\em 40\/}(1), 1--9.
 
 \bibitem[\protect\citeauthoryear{Tobler}{Tobler}{1970}]{toblera1970}
 Tobler, W.~R. (1970).

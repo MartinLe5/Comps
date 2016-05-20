@@ -4721,7 +4721,7 @@ at the Oxford China Business Forum, Beijing, 9 September 2010.},
 
 @Article{anselin1995local,
   author    = {Anselin, Luc},
-  title     = {{Local Indicators of Spatial Association -- LISA}},
+  title     = {Local Indicators of Spatial Association -- LISA},
   year      = {1995},
   volume    = {27},
   number    = {2},
