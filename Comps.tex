@@ -24,6 +24,15 @@
 \begin{quotation}
 \textbf{Discuss possible conventional GIS modeling of some of your data variables (pp. 14-15 in your Proposal). This may include Overlay Combinations, Rules in Distance Relationships, Spatial Analysis using Continuous Fields and other functions, normally as part of GIS procedures (scripts). Allude to both (quantitative) Analysis and (qualitative) Visualization results. Specify the spatial scope for these models, e.g., within cities, regions (GTA, SW Ontario), or at coarse scales (Canada, USA, North America).}
 \end{quotation}
+
+Since 
+
+Heat maps are a useful for discerning point patterns at various scales from continental (English North America) to regional (US Northeast\footnote{})neighbourhoods (Downtown GTA, Manhattan, ).   
+
+
+
+
+
 \section{Question 3}
 \begin{quotation}
 \textbf{Discuss the concept of spatial autocorrelation. Explain and critically evaluate that concept in the context of the spatial patterns of economic activities.}
@@ -43,7 +52,7 @@ Furthermore, the spatial weights table is more customizable to the problem at ha
 
 With regards to spatial pattern of economic activity, Moran's I can be used to test whether certain industries cluster or reppel each other.  For example, \citeN{GreenOLef2014} shows that institutional investors located on the island of Manhattan show clustering behaviour by co-locating more than what would be expected by random chance.  However, a more sophisticated treatment of Moran's I by mesuring the association between the weighted return on capital metric rather than simple presence, and found that metric was randomly distributed.  This makes conceptual sense, since it is unlikely that a potentially footloose industry (very few sunk costs with regards to location when compared to heavy industry)  investors could profit by taking advantage of spatial location alone on an ongoing period, especially when the dominant investing paradigm indicates that it is impossible to beat the market on a long-term basis \cite{Malkiel2005}.  
 
-More broadly, while Moran's I can be used to test for the presence of spatial autocorrelation of an industry within a certain geographical area, it's can't pinpoint local clusters.  This is where the localized variant of Moran's I, also known as Local Indicators of Spatial Association (LISA) should be used \cite{anselin1995local}.  This variant of Moran's I simultaneously calculates the degree of spatial autocorrelation between one point/polygon to all neighbouring points/polygon in order to identify each point/polygon as belonging to one of 4 states (High/High, Low/Low (Similarity to neighbours), High/Low and Low/High(dissimilar to neighbours) as well as indicating the absence of relationships.  
+More broadly, while Moran's I can be used to test for the presence of spatial autocorrelation of an industry within a certain geographical area, it's can't pinpoint local clusters.  This is where the localized variant of Moran's I, also known as Local Indicators of Spatial Association (LISA) should be used \cite{anselin1995local}.  This variant of Moran's I simultaneously calculates the degree of spatial autocorrelation between one point/polygon to all neighbouring points/polygon in order to identify each point/polygon as belonging to one of 4 states (High/High, Low/Low (Similarity to neighbours), High/Low and Low/High(dissimilar to neighbours/possible outliers) as well as indicating the absence of significant relationships \cite{Anselin2003}.  With regards to using LISA with economic data, one could do worse than using this technique to find clusters of economic agglomeration.  For example, if analyzing the spatial autocorrelation of firm headquarters, cluster such as Toronto's Financial District would likely show up as a High-High district, whereas nearby Regent's Park would likely be a Low-High district (near Downtown, but relatively few/non-existent amount of headquarters compared to it's environs) . 
 
 
 

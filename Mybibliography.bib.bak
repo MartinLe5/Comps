@@ -4721,13 +4721,22 @@ at the Oxford China Business Forum, Beijing, 9 September 2010.},
 
 @Article{anselin1995local,
   author    = {Anselin, Luc},
-  title     = {Local Indicators of Spatial Association -- LISA},
+  title     = {{Local Indicators of Spatial Association -- LISA}},
   year      = {1995},
   volume    = {27},
   number    = {2},
   pages     = {93--115},
   journal   = {Geographical analysis},
   publisher = {Wiley Online Library},
+}
+
+@Book{Anselin2003,
+  author    = {Luc Anselin},
+  title     = {{GeoDa\texttrademark 0.9 User’s Guide}},
+  year      = {2003},
+  note      = {\url{https://geodacenter.org/downloads/pdfs/geoda093.pdf}},
+  publisher = {Spatial Analysis Laboratory Department of Agricultural and Consumer Economics University of Illinois, Urbana-Champaign},
+  pagetotal = {126 pages},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

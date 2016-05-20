@@ -5,6 +5,13 @@ Anselin, L. (1995).
 \newblock {Local Indicators of Spatial Association -- LISA}.
 \newblock {\em Geographical analysis\/}~{\em 27\/}(2), 93--115.
 
+\bibitem[\protect\citeauthoryear{Anselin}{Anselin}{2003}]{Anselin2003}
+Anselin, L. (2003).
+\newblock {\em {GeoDa\texttrademark 0.9 User's Guide}}.
+\newblock Spatial Analysis Laboratory Department of Agricultural and Consumer
+  Economics University of Illinois, Urbana-Champaign.
+\newblock \url{https://geodacenter.org/downloads/pdfs/geoda093.pdf}.
+
 \bibitem[\protect\citeauthoryear{Green, {O'Hagan}, and Lefebvre}{Green
   et~al.}{2015}]{GreenOLef2014}
 Green, M.~B., S.~{O'Hagan}, and M.~Lefebvre (2015).
