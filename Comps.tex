@@ -25,11 +25,12 @@
 \textbf{Discuss possible conventional GIS modeling of some of your data variables (pp. 14-15 in your Proposal). This may include Overlay Combinations, Rules in Distance Relationships, Spatial Analysis using Continuous Fields and other functions, normally as part of GIS procedures (scripts). Allude to both (quantitative) Analysis and (qualitative) Visualization results. Specify the spatial scope for these models, e.g., within cities, regions (GTA, SW Ontario), or at coarse scales (Canada, USA, North America).}
 \end{quotation}
 
-Since 
+Descriptive:
 
-Heat maps are a useful for discerning point patterns at various scales from continental (English North America) to regional (US Northeast\footnote{})neighbourhoods (Downtown GTA, Manhattan, ).   
+Heat maps are a useful for discerning point patterns at various scales from continental (Canada and the United States) to regional (Central Canada\footnote{Ontario and Quebec}, Northeastern United States\footnote{This region consists of : Connecticut, Maine, Massachusetts, New Hampshire, New Jersey, New York, Pennsylvania Rhode Island, and Vermont \cite{Census2010_div}})neighbourhoods (Downtown Toronto, Manhattan).  There are many ways to calculate the heatmap, from simple counts to weighing according to various variables, such as money under management.   While not often considered an overlay operation, heat maps are overlay operations behind the scenes, since the algorithm calculates a kernel (2-d Gaussian probability distribution around the point) and sum all of the layers of the operation into a final heat map where a density of points translates into higher values due to the cumulative effect.  
 
-
+Overlays:
+The data is comprised almost entirely in the form of point patterns 
 
 
 
@@ -38,7 +39,7 @@ Heat maps are a useful for discerning point patterns at various scales from cont
 \textbf{Discuss the concept of spatial autocorrelation. Explain and critically evaluate that concept in the context of the spatial patterns of economic activities.}
 \end{quotation}
 
-Spatial autocorrelation is at it's heart the application of Tobler's first law of geography: ``everything is related to everything else, but near things are more related than distant things.''\cite[page  236]{toblera1970}.  In other words, this concept test using probability on whether the characteristics of location A are similar (or dissimilar) to location B via distance lags.   Significant results implies that spatial processes are at work.  Furthermore, this underlying spatial pattern renders many classical statstics unreliable, since it violates the assumption of independence between observations. 
+Spatial autocorrelation is at it's heart the application of Tobler's first law of geography: ``everything is related to everything else, but near things are more related than distant things.''\cite[page  236]{toblera1970}.  In other words, this concept test using probability on whether the characteristics of location A are similar (or dissimilar) to location B via distance lags.   Significant results implies that spatial processes are at work.  Furthermore, this underlying spatial pattern renders many classical statistics unreliable, since it violates the assumption of independence between observations\cite{fischer2009handbook}. 
 
 There are four widely used measures of spatial autocorrelation: Joint count analysis, Moran's I, Geary's C and Getis-Ord g statistic (also known in the literature as Hotspot Analysis or High/Low Clustering) as well as Local Moran's I.  
 

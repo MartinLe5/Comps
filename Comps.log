@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.4)  20 MAY 2016 00:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.4)  20 MAY 2016 01:00
 entering extended mode
 **Comps.tex
 (Comps.tex
@@ -236,28 +236,22 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 30.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (17.10074pt too wide) in paragraph at lines 30--31
-\T1/cmr/m/n/12 con-ti-nen-tal (En-glish North Amer-ica) to re-gional (US North-
-east[])neighbourhoods
- []
+) [1
 
-[1
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] (Comps.bbl
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4] (Comps.bbl
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 13.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)) [4] (Comps.aux) ) 
+)) [5] (Comps.aux) ) 
 Here is how much of TeX's memory you used:
- 2714 strings out of 493698
- 33079 string characters out of 3144409
- 89929 words of memory out of 3000000
- 5989 multiletter control sequences out of 15000+200000
+ 2716 strings out of 493698
+ 33116 string characters out of 3144409
+ 91129 words of memory out of 3000000
+ 5991 multiletter control sequences out of 15000+200000
  17047 words of font info for 50 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,8n,24p,1254b,250s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,8n,24p,1254b,252s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-su
 per-t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
@@ -265,13 +259,13 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-
-super/sfti0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sft
-i1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb
->
-Output written on Comps.pdf (4 pages, 154008 bytes).
+ublic/cm-super/sfrm1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-
+super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sft
+i0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on Comps.pdf (5 pages, 179006 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
+ 63 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,5 +1,7 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Comps.aux
 The style file: chicago.bst
 Database file #1: Mybibliography.bib
+Warning--entry type for "Census2010_div" isn't style-file defined
+--line 4703 of file Mybibliography.bib
 Warning--no journal in Malkiel2005
-(There was 1 warning)
+(There were 2 warnings)

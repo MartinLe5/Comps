@@ -12,6 +12,13 @@ Anselin, L. (2003).
   Economics University of Illinois, Urbana-Champaign.
 \newblock \url{https://geodacenter.org/downloads/pdfs/geoda093.pdf}.
 
+\bibitem[\protect\citeauthoryear{Fischer and Getis}{Fischer and
+  Getis}{2009}]{fischer2009handbook}
+Fischer, M.~M. and A.~Getis (2009).
+\newblock {\em Handbook of applied spatial analysis: software tools, methods
+  and applications}.
+\newblock Springer Science \& Business Media.
+
 \bibitem[\protect\citeauthoryear{Green, {O'Hagan}, and Lefebvre}{Green
   et~al.}{2015}]{GreenOLef2014}
 Green, M.~B., S.~{O'Hagan}, and M.~Lefebvre (2015).
@@ -35,5 +42,14 @@ Malkiel, B.~G. (2005).
 Tobler, W.~R. (1970).
 \newblock {A Computer Movie Simulating Urban Growth in the Detroit Region}.
 \newblock {\em Economic Geography\/}~{\em 46}, pp. 234--240.
+
+\bibitem[\protect\citeauthoryear{United States Department~of Commerce and
+  Statistics~Administration}{United States Department~of Commerce and
+  Statistics~Administration}{2010}]{Census2010_div}
+United States Department~of Commerce, E. and G.~D. Statistics~Administration,
+  United States Census~Bureau (2010).
+\newblock {Census Regions and Divisions of the United States}.
+\newblock Available online at
+  \url{https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf}.
 
 \end{thebibliography}
