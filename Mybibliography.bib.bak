@@ -4697,7 +4697,7 @@ at the Oxford China Business Forum, Beijing, 9 September 2010.},
   doi      = {10.1080/13675567.2013.870141},
   abstract = {Although anecdotal evidence suggests that co-location of logistics establishments can bring about several benefits for the co-located logistics firms. These benefits have not been widely researched. This article seeks to contribute to an understanding of the spatial  ...},
   file     = {C:\Users\Martin\Documents\ReadCube Media\Heuvel et al-2014-International Journal of Logistics Research and Applications.pdf},
-  journal  = {… Journal of Logistics …},
+  journal  = {Journal of Logistics},
 }
 
 @Report{Census2010_div,
@@ -4756,12 +4756,42 @@ at the Oxford China Business Forum, Beijing, 9 September 2010.},
   note      = {\url{https://www.r-project.org/conferences/useR-2008/slides/Zaccomer+Grassetti.pdf}},
 }
 
-@Manual{,
+@Manual{STMedianPolish,
   author = {William Martinez and Carlos Melo},
   title  = {STMedianPolish: Spatio-Temporal Median Polish},
   year   = {2015},
   note   = {R package version 0.1},
   url    = {https://CRAN.R-project.org/package=STMedianPolish},
+}
+
+@Book{Capello2007,
+  author    = {Capello, R.},
+  title     = {Regional Economics},
+  year      = {2007},
+  publisher = {Routledge},
+  location  = {London},
+}
+
+@Article{Hallihan_JIT_1997,
+  author   = {Hallihan, A and Sackett, P and Williams, {GM}},
+  title    = {{JIT} manufacturing: The evolution to animplementation model founded in current practice},
+  year     = {1997},
+  volume   = {35},
+  number   = {4},
+  pages    = {901-920},
+  doi      = {10.1080/002075497195443},
+  abstract = {... Assembly lines In 1950 Ford's River Rouge assembly plant used assembly operators, non-
+working foremen, support staŒfunctions, and a covering workforce for the absent assemblers. ...
+The Toyota production system used the post-war Ford River Rouge plant as a case study. ... 
+},
+  file     = {C:\Users\Martin\Documents\ReadCube Media\Hallihan et al-1997-International Journal of Production Research.pdf},
+}
+
+@Article{HicklingArthursLow2009,
+  author = {{{Hickling Arthurs Low}}},
+  title  = {Canada’s Entertainment Software Industry: The Opportunities and Challenges of a Growing Industry},
+  year   = {2009},
+  note   = {\url{http://theesa.ca/wp-content/uploads/2015/08/Economic-Impact-report-2009.pdf}},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
