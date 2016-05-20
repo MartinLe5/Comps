@@ -12,12 +12,33 @@ Anselin, L. (2003).
   Economics University of Illinois, Urbana-Champaign.
 \newblock \url{https://geodacenter.org/downloads/pdfs/geoda093.pdf}.
 
+\bibitem[\protect\citeauthoryear{Bodenman}{Bodenman}{1998}]{bodenmanthe1998}
+Bodenman, J.~E. (1998).
+\newblock {The Suburbanization of the Institutional Investment Advisory
+  Industry: Metropolitan Philadelphia, 1983--1993}.
+\newblock {\em The Professional Geographer\/}~{\em 50\/}(1), 112--126.
+
+\bibitem[\protect\citeauthoryear{Bodenman}{Bodenman}{2000}]{bodenmanfirm2000}
+Bodenman, J.~E. (2000).
+\newblock {Firm Characteristics and Location: The Case of the Institutional
+  Investment Advisory Industry in the United States, 1983 -- 1996}.
+\newblock {\em Papers in Regional Science\/}~{\em 79\/}(1), 33--56.
+
 \bibitem[\protect\citeauthoryear{Fischer and Getis}{Fischer and
   Getis}{2009}]{fischer2009handbook}
 Fischer, M.~M. and A.~Getis (2009).
 \newblock {\em Handbook of applied spatial analysis: software tools, methods
   and applications}.
 \newblock Springer Science \& Business Media.
+
+\bibitem[\protect\citeauthoryear{{Gian Pietro Zaccomer} and {Luca
+  Grassetti}}{{Gian Pietro Zaccomer} and {Luca
+  Grassetti}}{2008}]{ShiftShare2008}
+{Gian Pietro Zaccomer} and {Luca Grassetti} (2008).
+\newblock {Using R for Spatial Shift-Share Analysis}.
+\newblock In {\em UseR!2008, Dortmund, Germany}.
+\newblock
+  \url{https://www.r-project.org/conferences/useR-2008/slides/Zaccomer+Grassetti.pdf}.
 
 \bibitem[\protect\citeauthoryear{Green, {O'Hagan}, and Lefebvre}{Green
   et~al.}{2015}]{GreenOLef2014}
@@ -37,6 +58,12 @@ Lee, J. and D.~W.-S. Wong (2000).
 Malkiel, B.~G. (2005).
 \newblock Reflections on the efficient market hypothesis: 30 years later.
 \newblock ~{\em 40\/}(1), 1--9.
+
+\bibitem[\protect\citeauthoryear{Martinez and Melo}{Martinez and
+  Melo}{2015}]{STMedianPolish}
+Martinez, W. and C.~Melo (2015).
+\newblock {\em STMedianPolish: Spatio-Temporal Median Polish}.
+\newblock R package version 0.1.
 
 \bibitem[\protect\citeauthoryear{Tobler}{Tobler}{1970}]{toblera1970}
 Tobler, W.~R. (1970).

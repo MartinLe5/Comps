@@ -4739,4 +4739,29 @@ at the Oxford China Business Forum, Beijing, 9 September 2010.},
   pagetotal = {126 pages},
 }
 
+@Book{fischer2009handbook,
+  author    = {Fischer, Manfred M and Getis, Arthur},
+  title     = {Handbook of applied spatial analysis: software tools, methods and applications},
+  year      = {2009},
+  publisher = {Springer Science \& Business Media},
+  pages     = {811 pages},
+}
+
+@Conference{ShiftShare2008,
+  author    = {{Gian Pietro Zaccomer} and {Luca Grassetti}},
+  title     = {{Using R for Spatial Shift-Share Analysis}},
+  booktitle = {UseR!2008, Dortmund, Germany},
+  year      = {2008},
+  date      = {13 August},
+  note      = {\url{https://www.r-project.org/conferences/useR-2008/slides/Zaccomer+Grassetti.pdf}},
+}
+
+@Manual{,
+  author = {William Martinez and Carlos Melo},
+  title  = {STMedianPolish: Spatio-Temporal Median Polish},
+  year   = {2015},
+  note   = {R package version 0.1},
+  url    = {https://CRAN.R-project.org/package=STMedianPolish},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
