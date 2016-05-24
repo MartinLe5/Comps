@@ -1,8 +1,27 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\citeauthoryear{Smith}{Smith}{2010}]{Yves2010_Myths}
-Smith, Y. (2010).
+\bibitem[\protect\citeauthoryear{Cecchetti and Kharroubi}{Cecchetti and
+  Kharroubi}{2013}]{Cecchetti2013}
+Cecchetti, S.~G. and E.~Kharroubi (2013).
+\newblock Reassessing the impact of finance on growth.
+\newblock \url{http://www.bis.org/publ/work381.pdf}.
+
+\bibitem[\protect\citeauthoryear{Cecchetti and Kharroubi}{Cecchetti and
+  Kharroubi}{2015}]{Cecchetti2015}
+Cecchetti, S.~G. and E.~Kharroubi (2015).
+\newblock Why does financial sector growth crowd out real economic growth?
+\newblock \url{http://www.bis.org/publ/work490.pdf}.
+
+\bibitem[\protect\citeauthoryear{Smith}{Smith}{2010a}]{Yves2010_Myths}
+Smith, Y. (2010a).
 \newblock Debunking the myth that bigger banks are more efficient and
   necessary.
+
+\bibitem[\protect\citeauthoryear{Smith}{Smith}{2010b}]{Smith2010}
+Smith, Y. (2010b).
+\newblock {\em {ECONned :How Unenlightened Self-Interest Undermined Democracy
+  and Corrupted Capitalism}\/} (1 ed.).
+\newblock New York: Palgrave Macmillan.
+\newblock 362 pages.
 
 \end{thebibliography}

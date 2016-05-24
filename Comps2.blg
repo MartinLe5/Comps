@@ -3,4 +3,8 @@ The style file: chicago.bst
 Database file #1: Mybibliography.bib
 Warning--entry type for "Yves2010_Myths" isn't style-file defined
 --line 4828 of file Mybibliography.bib
-(There was 1 warning)
+Warning--entry type for "Cecchetti2015" isn't style-file defined
+--line 4843 of file Mybibliography.bib
+Warning--entry type for "Cecchetti2013" isn't style-file defined
+--line 4851 of file Mybibliography.bib
+(There were 3 warnings)
