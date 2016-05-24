@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.4)  20 MAY 2016 16:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.4)  24 MAY 2016 16:29
 entering extended mode
-**Comps.tex
-(Comps.tex
+**Comps2.tex
+(Comps2.tex
 LaTeX2e <2014/05/01>
 Babel <3.9l> and hyphenation patterns for 68 languages loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -196,7 +196,7 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@thisruleclass=\count103
 \@lastruleclass=\count104
 \@thisrulewidth=\dimen129
-) (Comps.aux)
+) (Comps2.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
@@ -224,70 +224,31 @@ LaTeX Font Info:    ... okay on input line 17.
 \makeMPintoPDFobject=\count110
 \everyMPtoPDFconversion=\toks25
 )
-Overfull \hbox (1.1487pt too wide) in paragraph at lines 21--22
-[]\T1/cmr/bx/n/12 It is com-monly as-sumed that ag-glom-er-a-tion economies
+Overfull \hbox (27.19225pt too wide) in paragraph at lines 28--29
+[]\T1/cmr/bx/n/12 Are there cir-cum-stances in which ag-glom-er-a-tion economie
+s
  []
 
 [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4] [5]
-[6]
-LaTeX Font Info:    Try loading font information for U+msa on input line 108.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 108.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [7] [8] [9] [10]
-[11] (Comps.bbl
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 13.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-[12]
-Underfull \hbox (badness 1845) in paragraph at lines 84--89
-[]\T1/cmr/m/n/12 Hickling Arthurs Low (2009). Canada's en-ter-tain-ment soft-wa
-re in-
- []
-
-
-Underfull \hbox (badness 4595) in paragraph at lines 84--89
-\T1/cmr/m/n/12 dus-try: The op-por-tu-ni-ties and chal-lenges of a grow-ing in-
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--89
-\T1/cmr/m/n/12 dus-try. $\T1/cmtt/m/n/12 http : / / theesa . ca / wp-[]content 
-/ uploads / 2015 / 08 /$
- []
-
-) [13] (Comps.aux) ) 
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] (Comps2.bbl)
+[3] (Comps2.aux) ) 
 Here is how much of TeX's memory you used:
- 2735 strings out of 493698
- 33404 string characters out of 3144409
- 91694 words of memory out of 3000000
- 6008 multiletter control sequences out of 15000+200000
- 18590 words of font info for 52 fonts, out of 3000000 for 9000
+ 2631 strings out of 493698
+ 31643 string characters out of 3144409
+ 89752 words of memory out of 3000000
+ 5934 multiletter control sequences out of 15000+200000
+ 8566 words of font info for 21 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,8n,24p,1261b,252s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-su
-per-t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/cm-super/sfrm0700.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-
-super/sfrm1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfr
-m1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti0800.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Comps.pdf (13 pages, 223265 bytes).
+ 27i,5n,24p,998b,199s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-supe
+r-t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on Comps2.pdf (3 pages, 74133 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 29 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

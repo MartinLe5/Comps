@@ -16,76 +16,135 @@
 \title{Comps}
 \begin{document}
 	
-\section{Question 1}
-\begin{quotation}
-\textbf{It is commonly assumed that agglomeration economies generate benefit to: i) the firms within a cluster and ii) the communities that 'house' the agglomeration. In both cases, provide detail on the nature of these advantages.}
-
-\end{quotation}
-
-
-Lean heavily on \citeN{Capello2007} taxonomy of advantages.   
-
-Production Cost
-Co-location in a cluster offers many advantages to both the firm and the community that housed the cluster, such as transportation cost 
-
-Firms can lower costs by minimizing transportation costs between steps of production.  The classic extreme case is the Ford Motor Company's River Rouge complex that took in raw materials from vertically integrated subsidiaries such as iron ore, coal, wood and rubber at one end, and delivered finished cars at the other end.  However, due to management costs, the set-up was not as efficient as originally envisioned by the theoreticians of scientific management. A more modern example is the current Western just in time system (JIT/lean manufacturing), that emphasizes close integration between parts suppliers and assembly/sub-assembly plants since there is a cost associated with each manipulation of inventory and firms attempt to keep a minimum of inventory at hand at each step of manufacturing \cite{Hallihan_JIT_1997}.  In addition, shorter distances involved between parts suppliers and assembly locations results in more trips per unit of time, and thus firms save directly on transportation costs. \cite{HeuvelLangenDonselaarEtAl2014}   
-
-
-Furthermore, in areas with access to temporary skilled-workers, companies are able to ramp up and slow down production to match the business environment without having any long-term association/relationship to the labour. As seen in the current "gig" economy, employers are able to externalize the cost of down-time onto labour, thereby reducing cost.  Furthermore, this high level of mobility facilitates the transfer of tacit knowledge (best practises) between firms.    
-
-
-     
-
-A major community advantage of being located in a cluster, is the abilit to change employers in the same field of work, without having to move house and home \cite{HicklingArthursLow2009}.  This helps preserve communal bonds, while lowering the transaction costs of changing employers.   
-
-
-\section{Question 2}
-\begin{quotation}
-\textbf{Discuss possible conventional GIS modeling of some of your data variables (pp. 14-15 in your Proposal). This may include Overlay Combinations, Rules in Distance Relationships, Spatial Analysis using Continuous Fields and other functions, normally as part of GIS procedures (scripts). Allude to both (quantitative) Analysis and (qualitative) Visualization results. Specify the spatial scope for these models, e.g., within cities, regions (GTA, SW Ontario), or at coarse scales (Canada, USA, North America).}
-\end{quotation}
-
-Descriptive:
-Quadrat Analysis would use the geocoded points of the institutional investor location in the GIS environment. and aggregate the number of points in each pixel of the quadrat lattice.  However, this raster will be quite noisy.  Therefore, to simplify the analysis of aggregate weight of institutional investors, a median filter will be used to smooth the data.  A median filter is more likely to be of greater use than a Fast-Fourier Transform since the data is more likely than not to be non-parametric - a key assumption behind Fourier Transform - as well having the property of preserving edges.  This new surface can be used to identify local concentrations of investors if using a gird on the order of a few hundred meters, as well as continental scales if using girds that covers hundreds of kilometres per side.   
-
-
-Heat maps are a useful for discerning point patterns at various scales from continental (Canada and the United States) to regional (Central Canada\footnote{Ontario and Quebec}, Northeastern United States\footnote{This region consists of : Connecticut, Maine, Massachusetts, New Hampshire, New Jersey, New York, Pennsylvania Rhode Island, and Vermont \cite{Census2010_div}})neighbourhoods (Downtown Toronto, Manhattan).  There are many ways to calculate the heatmap, from simple counts to weighing according to various variables, such as money under management.   While not often considered an overlay operation, heat maps are overlay operations behind the scenes, since the algorithm calculates a kernel (2-d Gaussian probability distribution around the point) and sum all of the layers of the operation into a final heat map where a density of points translates into higher values due to the cumulative effect.  
-
-Spatial analysis routines 
-
-Since the coverage area remains the same for the entire study period, it is possible to examine changes in test results over time without having to worry about the neighbourhood effect since physical space remains constant over time.  This would be a great opportunity to look at large North American cities such as New York, Boston, Chicago, Toronto, Philadelphia and San Francisco and test a few of the conclusions set out in \citeN{bodenmanthe1998} and \citeN{bodenmanfirm2000}, such as the exodus of algorithmic traders/index funds trader to the city periphery.  This can be accomplished by aggregating the total funds allocated to different indexes (Dow-Jones 100, S\&P 1000, FTSE 1000 and TSX 1000) for each year 2010 census block.  In order to keep spatial boundaries constant throughout the study period (2000 to 2015) the Year 2010 census block shapefile will be used for spatial aggregating rather than using a combination of the year 2000 and 2010 shapefile. These 64 populated shape files will be transformed into a movie in order to facilitate the tracking of movement over time.  A second exploratory method for analyzing the spatio-time series data would be to apply Tukey's median polish to a matrix comprised of polygon IDs on one axis and time intervals on the other \cite{tukey77,STMedianPolish}.  By analyzing the residuals table of Tukey's median polish algorithm, in conjunction to the movie created in the previous step will highlight areas interest for more informed analysis rather than simple exploratory data analysis.   
-
-
-
-   
-Nearest Neighbour Analysis 
-Ripley's K
-
-Spatial Shift-Share Analysis \cite{ShiftShare2008}
-
-
-\section{Question 3}
-\begin{quotation}
-\textbf{Discuss the concept of spatial autocorrelation. Explain and critically evaluate that concept in the context of the spatial patterns of economic activities.}
-\end{quotation}
-
-Spatial autocorrelation is at it's heart the application of Tobler's first law of geography: ``everything is related to everything else, but near things are more related than distant things.''\cite[page  236]{toblera1970}.  In other words, this concept test using probability on whether the characteristics of location A are similar (or dissimilar) to location B via distance lags.   Significant results implies that spatial processes are at work.  Furthermore, this underlying spatial pattern renders many classical statistics unreliable, since it violates the assumption of independence between observations\cite{fischer2009handbook}. 
-
-There are four widely used measures of spatial autocorrelation: Joint count analysis, Moran's I, Geary's C and Getis-Ord g statistic (also known in the literature as Hotspot Analysis or High/Low Clustering) as well as Local Moran's I.  
-
-The simplest test for spatial autocorrelation is joint count analysis \cite{LeeWong2001}. This technique measures the strength of association of a phenomenon with regards to presence or absence of a binary attribute in adjacent polygons (ie sum of 1-1, 0-1, 0-0 interactions) vs an expected count that assumes the distribution of polygon counts is randomly distributed. As with many spatial techniques, this measure is sensitive to the border effect since unnecessarily large survey areas or unessessarily small polygons (using dissemination blocks for Canada-wide data location of Tim Hortons franchise locations) can artificially increase the effect of clustering.  The reverse is also true, with too large a spatial aggregation reducing the power of the test to irrelevance (ie. using presence in forward sortation areas polygons).   
-
-While this method is simple (conceptually and mathematically), it's simplicity can make it a coarse instrument in some respects.  For instance, the binary attribute (presence or absence), does not measure the strength of association, therefore a polygon with 1 instance is weighted the same as a polygon with 10 instances.  In order to calculate this level of interaction, a more sophisticated measure will be needed, such as Moran's I statistic.  
-
-Moran's I, is more sophisticated than joint-count analysis, by allowing the use of points and  polygons as well as the ability to use any continuous variable rather than binary data.  The output of Moran's I measures the degree of correlation between the variable $\chi$ and the spatial lag of $\chi$ by averaging the value of $\chi$ in neighbouring regions as determined by the spatial weights matrix. 
-
-Furthermore, the spatial weights table is more customizable to the problem at hand than in Joint-Count Analysis.  Most of the decision process in choosing the distance method for populating the spatial weights table will be influence by the literature.  From the most naive (least subject knowledge/fewest assumptions), the spatial weights table can describe a basic agency matrix (1 or 0) using the rook's or queen's case when dealing with polygons, or in the case of point data, the nearness of the point/polygon to it's neighbours ( $wij = 1/dij$ where the matrix is calculated as 1 over the distance of between points) for $n$-number of neighbours or buffer of n-distance from each point/centroid of polygon.  Furthermore, the adjacency matrix can also be row standardized when there is an unequal number of neighbours, or have a distance decay function such as exponential decay.   
-
-With regards to spatial pattern of economic activity, Moran's I can be used to test whether certain industries cluster or reppel each other.  For example, \citeN{GreenOLef2014} shows that institutional investors located on the island of Manhattan show clustering behaviour by co-locating more than what would be expected by random chance.  However, a more sophisticated treatment of Moran's I by mesuring the association between the weighted return on capital metric rather than simple presence, and found that metric was randomly distributed.  This makes conceptual sense, since it is unlikely that a potentially footloose industry (very few sunk costs with regards to location when compared to heavy industry)  investors could profit by taking advantage of spatial location alone on an ongoing period, especially when the dominant investing paradigm indicates that it is impossible to beat the market on a long-term basis \cite{Malkiel2005}.  
-
-More broadly, while Moran's I can be used to test for the presence of spatial autocorrelation of an industry within a certain geographical area, it's can't pinpoint local clusters.  This is where the localized variant of Moran's I, also known as Local Indicators of Spatial Association (LISA) should be used \cite{anselin1995local}.  This variant of Moran's I simultaneously calculates the degree of spatial autocorrelation between one point/polygon to all neighbouring points/polygon in order to identify each point/polygon as belonging to one of 4 states (High/High, Low/Low (Similarity to neighbours), High/Low and Low/High(dissimilar to neighbours/possible outliers) as well as indicating the absence of significant relationships \cite{Anselin2003}.  With regards to using LISA with economic data, one could do worse than using this technique to find clusters of economic agglomeration.  For example, if analyzing the spatial autocorrelation of firm headquarters, cluster such as Toronto's Financial District would likely show up as a High-High district, whereas nearby Regent's Park would likely be a Low-High district (near Downtown, but relatively few/non-existent amount of headquarters compared to it's environs) . 
-
-
-
+	\section{Question 1}
+	\begin{quotation}
+		\textbf{It is commonly assumed that agglomeration economies generate benefit to: i) the firms within a cluster and ii) the communities that 'house' the agglomeration. In both cases, provide detail on the nature of these advantages.}
+		
+	\end{quotation}
+	
+	\subsection{Introduction}
+	During the 1990s, many futurists such as \citeN{Obrian1992} proudly heralded the death of concept of space thanks to advances in telecommunications technology, and thereby rendering the literature in geography and clusters as antiquated as steam engines... all the while blithely ignoring that he was living in the middle of one of, if not the largest economic clusters ever created by human civilization: Silicone Valley.   The failure of the telecommunications revolution to live up to the hype of its promoters have caused many to re-examine the role of space in an increasingly interconnected and wireless world.  However, the role of geography never dissipated during the last two decades of the twentieth century and the first decades to the third millennium, it only changed in response to more efficient exchange mechanism of information.  As such, we still see economic clusters all the time, for what else is a city than an agglomeration of firms and a community/communities to house them? 
+	
+	This answer will lean heavily on the taxonomy laid-out by \citeN{Branzanti2015}, namely production costs, transaction costs, efficiency of production, and dynamic efficiency.
+	
+	\subsection{Production Cost}
+	Co-location in a cluster offers many advantages to both the firm and the community that housed the cluster, such as transportation cost.
+	
+	Firms can lower costs by minimizing transportation costs between steps of production.  The classic extreme case is the Ford Motor Company's River Rouge complex that took in raw materials from vertically integrated subsidiaries such as iron ore, coal, wood and rubber at one end, and delivered finished cars at the other end.  However, due to management costs, the set-up was not as efficient as originally envisioned by the theoreticians of scientific management. A more modern example is the current Western just in time system (JIT/lean manufacturing), that emphasizes close integration between parts suppliers and assembly/sub-assembly plants since there is a cost associated with each manipulation of inventory and firms attempt to keep a minimum of inventory at hand at each step of manufacturing \cite{Hallihan_JIT_1997}.  In addition, shorter distances involved between parts suppliers and assembly locations results in more trips per unit of time, and thus firms save directly on transportation costs. \cite{HeuvelLangenDonselaarEtAl2014}   
+	
+	
+	Furthermore, in areas with access to temporary skilled-workers, companies are able to ramp up and slow down production to match the business environment without having any long-term association/relationship to the labour. As seen in the current "gig" economy, employers are able to externalize the cost of down-time onto labour, thereby reducing cost.  Furthermore, this high level of mobility facilitates the transfer of tacit knowledge (best practises) between firms.  
+	
+	On the other hand, the competition for skilled labour, especially if there are more open positions than labourers, will ratchet up salaries.  Furthermore, when the labour market approaches full employment, all wages - even those of the unskilled - will rise.  Assuming that this increase in wages is higher than the rate of inflation, workers will see an increase in disposable income.  
+	
+	\subsection{Transactions costs}
+	
+	In cluster, labour and firms both benefit from reduced transaction cost, especially when trying to match the skills of individual labourers and available jobs.  In effect, the larger the pool of jobs and labour, the more effective the sorting, and the odds of highly skilled workers engaged in menial tasks falls.  Furthermore, by finding employees with the right skill, employers don't have to pay for on-the-job training to maximize productivity, or conversely pay a salary premium for skills and certifications that are surplus to requirements.  
+	
+	Furthermore, working in an environment with a shared set of cultural norms and mores between labour and management reduces the transaction costs of learning a new work culture with a new job.  For example, there is the famous culture clash in the 1980s between Silicone Valley (Casual work attire, emphasis on horizontal management) and that of the Interstate 128/Boston information technology scenes (traditional/formal work attire, emphasis on vertical hierarchy with multiple layers of middle management)
+	
+	A major community advantage of being located in a cluster, is the ability to change employers in the same field of work, without having to move house and home \cite{HicklingArthursLow2009}.  This helps preserve communal bonds, while lowering the transaction costs of changing employers.  Another benefit of keeping and nurturing social networks of informal relationships, is that this ``Old Boys Network'' speeds up the vetting process via recommendations/endorsements from mutual trusted third parties.  This vetting network allows for an efficient weeding out of serial bad actors, thus levelling information asymmetry between negotiating partners.  
+	
+	\subsection{Production Efficiency}
+	
+	
+	However, what is more interesting for industry is that co-location can increase production efficiency by offering a wider selection of possible business partners; as with skills matching on the labour/employer, firms in a cluster are more likely to interact with specialists rather than generalists in their field.  
+	Furthermore, deeper ties between firms, all other things being equal, should allow for more efficient cooperation, as well as sharing ideas.   
+	
+	Infrastructure can lower costs and boost efficiency.  For example, the post Great Recession consolidation of the North American automobile sector has shifted production and parts suppliers along Interstate 75 (with lessor roles to I-65 and I-55 corridors)\cite{Cuneo2014}  
+	
+	Industrial Atmosphere (Marshallian District)
+	
+	Alfred Marshal noted that the cultural atmosphere in industrial districts was conducive to driving efficiency.  Reciprocal goodwill of working for firms that invest in the community, increases employee by-in to the firm, witch all thing being equal, increase productivity. This in turn provides a sense of pride in the community and ease recruitment.   
+	
+	Tacit Knowledge 
+	
+	it is a truism that certain skills cannot be taught, they can only be gained though experience and mastered with repetition.  One such example is the difference between a short-order cook and a Michelin Star rated chef.  Both the cook and the chef have the same basic role, that is to take ingredients and transform them into edible meals.  The major difference between the two is that the cook works by rote on a limited set of dishes and has no creative input on the overall menu, whereas the chef uses knowledge gained via experience to understand their ingredients, technical skills and creativity in order to maximize the impact of ingredients to create a memorable dish all the while managing the overall menu, supply chain, staff, equipment and labour in their kitchen \cite{Klein2010}.  However, short order cook positions are orders of magnitude more common than chef positions, as such, larger agglomerations are able to support more specialists that could otherwise be the case with regards to a function of their population.  
+	
+	A more mundane example of the importance of physical proximity when conducting business is the plethora of non-verbal clues that human rely on when deciding when to trust a stranger.  Unfortunately, these visual clues are near completely absent in a phone conversation and noticeably impaired in a video-call.  However, co-location within a cluster lowers the cost (transportation and oppertunity - the travel to and from the remote location) 
+	
+	\subsection{Dynamic Efficiency}
+	
+	Accumulation of local knowledge
+	
+	Theoretical economic discussions often centre around a simplified version of reality, forgetting certain mundane barriers to trade, such as knowledge of local idioms.  There is a growing literature such as  \cite{Hau2001} and \cite{choedo2004} that show that lacking native-level proficiency in the local language, culture and idiom can be a liability when trading stocks, since non-native speaker regularly buy stocks at a higher price than domestic investors as well as sell these stocks for a lower price.
+	
+	Knowledge of the local culture can also be used for advantage with regards to logistics companies, since individuals knowledgeable of local traffic patterns would be better able to schedule deliveries around peek road congestion hours.  This benefits the company by saving time that would otherwise be spend at less than ideal cruising speed, as well as benefiting the local community who get to enjoy a less congested road. 
+	
+	
+	Shared Resources
+	
+	
+	Similarly, in the case of co-located logistics companies, cooperation in terms of sub-contracting parcel delivery allowed maximal use of truck space, as well as making inter-modal train transportation profitable.   Furthermore, the pooling of resources between logistic companies allows of the rationalization of vehicle space to maximize use of capital goods, and minimizing empty legs in order to drive efficiency and lower emissions. This is a win-win for the community hosting the logistics hubs since the aforementioned inefficiencies reduce negative externalizes that the population would otherwise suffer such as congestion, excess tail-pipe pollutants and CO2 emission.    \cite{HeuvelLangenDonselaarEtAl2014}     
+	
+	Risk 
+	
+	By allowing for the efficient partnering of multiple firms for short-term projects as well as fostering joint-ventures in the medium term, firms are able to reduce the risk of adverse outcomes from capital intensive projects such as film-making, erecting capital investments or expanding into new markets.  This is especially useful in fast-evolving markets where, especially when there is a long lead-time between production and sale such as film, art, video games, jewelry, etc.   Furthermore, by spreading the risk among multiple different firms, each individual reduces it's risk that a failed venture would bankrupt or shackle the firm with stranded assets.  Incidentally, this is also a major advantage for the community, since in aggregate it lowers the risk of mass layoffs, and all of the negative economic spillovers that is associated with unemployment such as loss of disposable income by a segment of the population as well as direct knock-on effects in supplier employment and the indirect effects in the local economy.  
+	
+	Spillovers
+	
+	The accumulation of knowledge at the local level allows for faster spread of best practises between different employer and/or sectors.  As such, a community or firm can increase its resilience to ill economic winds  by transferring skills into a new industry.  A classic example is the city of Solingen Germany.  During the Middle Ages to the Early Modern Period, the city was a European centre for blacksmithing - especially with regards to making swords and knives.  However, as swords fell out of fashion due to advances in gunpowder warfare, the city's craftsworker were able to transfer their metallurgical skills into making world-class cutlery, scissors and razors \cite{Solingen}.  However it should be noted that this new application is for higher-end goods rather than mass production.
+	
+	
+	\subsection{conclusion}
+	
+	As noted in the post-industrial United States Northeast, the ability of clusters and its community can't thrive without the other, for strong jobs prospects lead to population growth, and population growth can lead to more jobs.  This symbiosis can be tied to four different interrelated concepts of efficiency.  For companies, this amounts to production costs - that is to say using one's position in the cluster to maximize economic gain either by lowering transport costs, lowering recruitment costs by having a better match between skills and jobs; transaction costs - that is to say using the "Old Boy's Network" as an informal vetting system to efficiently weed out bad actors as well as vetting new employees; efficiency of production - that is to say making maximum use of local infrastructure; and using dynamic efficiency of cooperation to minimize waste/unnecessary duplication of effort as well as sharing risks among business associates in order to isolate a firm against failure of a particular product. 
+	
+	In a similar vein, communities draw many benefits from being in a cluster, namely production costs - such as maximizing the labour value of a unit of work by better matching a person's skills to the work offered (that is to say having a PhD drawing espresso shots at the local coffee shop would not be considered an efficient use of the intellectual capital of the barista); transaction costs that is to say using the Old Boy's Network for finding better and more rewording work, as well as using knowledge of the local culture to find employer that are a better cultural match for the employee; efficiency of production - that is to say being able to learn tacit skills in order to rise up the value chain of employment as well as learning labour saving tricks of the trade; and dynamic efficiency - that is to say using local knowledge that can have a short shelf-life for personal gain, or applying skills learn in one industry to innovate in a seconded industry (as an example, all of the technology behind the Iphone was invented years prior to the first apple branded mobile device.  Steve Jobs' genius was to simultaneously apply all of those technical innovations into one products that was a ``jack of all trades and a master of none''.) 
+	
+	A major negative externality that is obvious by its absence is the role of industrial pollution on the local community.  In the current economic paradigm, nearly all economic activity is tied to energy in its various forms such as oil, food, sunlight, etc.  Whilst the Western world no longer harbours the large - and active - industrial wastelands, these days found in the clusters that drive the economic dynamo of developing countries. 
+	
+	A recent trend that is worth mention with regards to clustering dynamic, but does not fit neatly in the cluster - population dynamic is the turning away form the core-competency and outsource the rest mentality as seen in the examples of \cite{Branzanti2015} is the move of tech companies (Apple, SpaceX, Tesla, Samsumg etc) to try limit offerings and capture as much vertical integration as possible.  In a sense, a return to a modified form of fordism.  While Apple is happy outsource the physical production of their products, they exercise tight control over product design, marketing, software, product synergy...  Similarly, SpaceX is able to manufacture advanced rockets using lean manufacturing techniques in a single factory for half the price of their US competitors that have spread out their manufacturing plants in order to maximize political influence.  In a similar vein, Tesla is using a plant that was abandoned Toyota and GM for being too inefficient and away from the main I-75 supply chains in southern California to produce cost-efficient electric cars where most of the parts are design and fabricated in-house.  Whether this is a statistical blip on the radar or a harbinger of things to come, only time will tell.   
+	
+	
+	\section{Question 2}
+	\begin{quotation}
+		\textbf{Discuss possible conventional GIS modeling of some of your data variables (pp. 14-15 in your Proposal). This may include Overlay Combinations, Rules in Distance Relationships, Spatial Analysis using Continuous Fields and other functions, normally as part of GIS procedures (scripts). Allude to both (quantitative) Analysis and (qualitative) Visualization results. Specify the spatial scope for these models, e.g., within cities, regions (GTA, SW Ontario), or at coarse scales (Canada, USA, North America).}
+	\end{quotation}
+	
+	While the data in pages 14 and 15 of the Proposal were intended to be fitted to a clustering algorithm to create an unknown number of classes of institutional investors, and were thus not chosen to be directly analyzed GIS environment, it would be interesting to see what kinds of spatial analysis can be conducted  to further the research project.  Descriptive analysis such as quadrat analysis and heatmaps will offer insights into the shape of the point pattern.  With regards to spatial analysis routines, the potential for fixed spatial boundaries over time offer the ability to directly compare Nearest Neighbour index values, as well as creating visual clues about spatial dispersion over time.   
+	
+	Quadrat analysis would use the geocoded points of the institutional investor location in the GIS environment. and aggregate the number of points in each pixel of the quadrat lattice.  However, this raster will be quite noisy.  Therefore, to simplify the analysis of aggregate weight of institutional investors, a median filter will be used to smooth the data.  A median filter is more likely to be of greater use than a Fast-Fourier Transform since the data is more likely than not to be non-parametric - a key assumption behind Fourier Transform - as well having the property of preserving edges.  This new surface can be used to identify local concentrations of investors if using a grid on the order of a few hundred meters, as well as continental scales if using grids that covers hundreds of kilometres per side.   
+	Heatmaps are useful for discerning point patterns at various scales from continental (Canada and the United States) to regional (Central Canada\footnote{Ontario and Quebec}, Northeastern United States\footnote{This region consists of : Connecticut, Maine, Massachusetts, New Hampshire, New Jersey, New York, Pennsylvania Rhode Island, and Vermont \cite{Census2010_div}}) to neighbourhoods (Downtown Toronto, Manhattan).  There are many ways to calculate the heatmap, from simple counts to weighing according to various variables, such as money under management.   While not often considered an overlay operation, heatmaps are overlay operations behind the scenes, since the algorithm calculates a kernel (2-d Gaussian probability distribution around the point) and sum all of the layers of the operation into a final heatmap where a density of points translates into higher values due to the cumulative effect.  
+	
+	Spatial analysis routines 
+	
+	Since the coverage area remains the same for the entire study period, it is possible to examine changes in test results over time without having to worry about the neighbourhood effect since physical space remains constant over time.  
+	
+	This stable area though time allows for the use of meaningful comparisons between various Nearest Neighbour index values. These index values can then undergo time-series decomposition ( time-series = trend + seasonal variation + random noise) in order to find the underlying trend - if it exists.  This could potentially support or refute \citeN{bodenmanfirm2000} conclusions of institutional investors undergoing an exodus from central business districts to the suburbs of large cities.  As such, large North American cities such as New York, Boston, Chicago, Toronto, Philadelphia and San Francisco would make fine test areas.   
+	
+	Similarly, \citeN{bodenmanthe1998}'s assertion of passive index funds leading the exodus to suburbia can also be tested by aggregating the total funds allocated to different indexes (Dow-Jones 100, S\&P 1000, FTSE 1000 and TSX 1000) for each year 2010 census block.  In order to keep spatial boundaries constant throughout the study period (2000 to 2015) the Year 2010 census block shapefile will be used for spatial aggregating rather than using a combination of the year 2000 and 2010 shapefile. These 64 populated shape files will be transformed into a movie in order to facilitate the tracking of movement over time.  A second exploratory method for analyzing the spatio-time series data would be to apply Tukey's median polish to a matrix comprised of polygon IDs on one axis and time intervals on the other \cite{tukey77,STMedianPolish}.  By analyzing the residuals table of Tukey's median polish algorithm, in conjunction to the movie created in the previous step will highlight areas interest for more informed analysis rather than simple exploratory data analysis.   
+	
+	With regards to scripting, a simple for-loop routine or a flow-map algorithm can be used to indicate the strength and direction of the flow of institutional investor money. 
+	
+	Therefore, in order to analyses data qualitative and qualitative at various scales, conventional GIS modelling is needed to give insights into institutional investors. 
+	
+	\section{Question 3}
+	\begin{quotation}
+		\textbf{Discuss the concept of spatial autocorrelation. Explain and critically evaluate that concept in the context of the spatial patterns of economic activities.}
+	\end{quotation}
+	
+	Spatial autocorrelation is at its heart the application of Tobler's first law of geography: ``everything is related to everything else, but near things are more related than distant things.''\cite[page  236]{toblera1970}.  In other words, this concept tests, using probability, on whether the characteristics of location A are similar (or dissimilar) to location B via distance lags.   Significant results implies that spatial processes are likely at work.  Furthermore, this underlying spatial pattern renders many classical statistics unreliable, since it violates the assumption of independence between observations \cite{fischer2009handbook}. 
+	
+	There are four widely used measures of spatial autocorrelation: Joint count analysis, Moran's I, Local Moran's I and Geary's C.    
+	
+	The simplest test for spatial autocorrelation is joint count analysis \cite{LeeWong2001}. This technique measures the strength of association of a phenomenon with regards to presence or absence of a binary attribute in adjacent polygons (ie sum of 1-1, 0-1, 0-0 interactions) vs an expected count that assumes the distribution of polygon counts is randomly distributed. As with many spatial techniques, this measure is sensitive to the border effect since unnecessarily large survey areas or unessessarily small polygons (using dissemination blocks for Canada-wide data location of Tim Hortons franchise locations) can artificially increase the effect of clustering.  The reverse is also true, with too large a spatial aggregation reducing the power of the test to irrelevance (ie. using presence in forward sortation areas polygons).   
+	
+	While this method is simple (conceptually and mathematically), it's simplicity can make it a coarse instrument in some respects.  For instance, the binary attribute (presence or absence), does not measure the strength of association, therefore a polygon with 1 instance is weighted the same as a polygon with 10 instances.  In order to calculate this level of interaction, a more sophisticated measure will be needed, such as Moran's I statistic.  
+	
+	Moran's I, is more sophisticated than joint-count analysis, by allowing the use of points and  polygons as well as the ability to use any continuous variable rather than binary data.  The output of Moran's I measures the degree of correlation between the variable $\chi$ and the spatial lag of $\chi$ by averaging the value of $\chi$ in neighbouring regions as determined by the spatial weights matrix. 
+	
+	Furthermore, the spatial weights table is more customizable to the problem at hand than in Joint-Count Analysis.  Most of the decision process in choosing the distance method for populating the spatial weights table will be influenced by the relevant literature.  From the most naive (least subject knowledge/fewest assumptions), the spatial weights table can describe a basic adjacency matrix (1 or 0) using the rook's or queen's case when dealing with polygons, or in the case of point data, the nearness of the point/polygon to it's neighbours ( $wij = 1/dij$ where the matrix is calculated as 1 over the distance of between points) for $n$-number of neighbours or buffer of n-distance from each point/centroid of polygon.  Furthermore, the adjacency matrix can also be row standardized when there is an unequal number of neighbours, or have a distance decay function such as exponential decay.   
+	
+	With regards to spatial pattern of economic activity, Moran's I can be used to test whether certain industries cluster or reppel each other.  For example, \citeN{GreenOLef2014} show that institutional investors located on the island of Manhattan show clustering behaviour by co-locating more than what would be expected by random chance.  However, a more sophisticated treatment of Moran's I is achieved by mesuring the association between the weighted return on capital metric rather than simple presence, and found that return on captial was randomly distributed.  This makes conceptual sense, since it is unlikely that a potentially footloose industry (very few sunk costs with regards to location when compared to heavy industry)  investors could profit by taking advantage of spatial location alone on an ongoing period, especially when the dominant investing paradigm indicates that it is impossible to beat the market on a long-term basis \cite{Malkiel2005}.  
+	
+	More broadly, while Moran's I can be used to test for the presence of spatial autocorrelation of an industry within a certain geographical area, it can't pinpoint local clusters.  This is where the localized variant of Moran's I, also known as Local Indicators of Spatial Association (LISA) should be used \cite{anselin1995local}.  This variant of Moran's I simultaneously calculates the degree of spatial autocorrelation between one point/polygon to all neighbouring points/polygon in order to identify each point/polygon as belonging to one of 4 states (High/High, Low/Low (Similarity to neighbours), High/Low and Low/High(dissimilar to neighbours/possible outliers)) as well as indicating the absence of significant relationships \cite{Anselin2003}.  With regards to using LISA with economic data, one could do worse than using this technique to find clusters of economic agglomeration.  For example, if analyzing the spatial autocorrelation of firm headquarters, cluster such as Toronto's Financial District would likely show up as a High-High district, whereas nearby Queens' Park would likely be a Low-High district (near Downtown, but relatively few/non-existent amount of headquarters compared to it's environs). 
+	
+	Gary's C is similar to Moran's I, but rather than using a -1 to 1 scale, Gary's C is scaled where 0 represents absolute concentration and 2 represents absolute spatial repulsion.  The main mathematical difference between Moran's I and Gary's C is that Moran's I is calculated from the deviation from the mean whereas Gary's C uses the values themselves. In any case where Moran's I can be used, Gary's C can also be used.  However, Moran's I is more popular since the scale that crosses zero is easier to intuitively understand for most people \cite{singleton2015introduction}.  
+	
+	In Geography, the degree of association between various spatial points is of high importance, especially since if one were to ignore spatial process and depend on classical statistics, the strenght of association would be higher than in reality.   This section looked at 4 concepts of spatial autocorelation and examined a few economic questions that could be answerd with this expanded toolbox.  
+	
+	
 	\pagebreak
 	\bibliographystyle{chicago}
 	\bibliography{Mybibliography}

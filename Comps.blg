@@ -3,10 +3,18 @@ The style file: chicago.bst
 Database file #1: Mybibliography.bib
 Warning--entry type for "Census2010_div" isn't style-file defined
 --line 4703 of file Mybibliography.bib
+Warning--entry type for "Klein2010" isn't style-file defined
+--line 4797 of file Mybibliography.bib
+Warning--entry type for "Cuneo2014" isn't style-file defined
+--line 4805 of file Mybibliography.bib
+Warning--entry type for "Solingen" isn't style-file defined
+--line 4812 of file Mybibliography.bib
+Warning--no journal in Branzanti2015
 Warning--no journal in Hallihan_JIT_1997
 Warning--no journal in HicklingArthursLow2009
 Warning--no number and no volume in HicklingArthursLow2009
 Warning--page numbers missing in HicklingArthursLow2009
 Warning--no journal in Malkiel2005
 Warning--empty organization in STMedianPolish
-(There were 7 warnings)
+Warning--no number and no volume in singleton2015introduction
+(There were 12 warnings)
