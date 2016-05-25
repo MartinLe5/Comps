@@ -6,6 +6,11 @@ Bagli, C.~V. (2011).
 \newblock New York Times
   \url{http://www.nytimes.com/2011/06/09/nyregion/ubs-may-move-back-to-manhattan-from-stamford.html}.
 
+\bibitem[\protect\citeauthoryear{Brunsdon}{Brunsdon}{2014}]{pycno}
+Brunsdon, C. (2014).
+\newblock {\em pycno: Pycnophylactic Interpolation}.
+\newblock R package version 1.2.
+
 \bibitem[\protect\citeauthoryear{Cecchetti and Kharroubi}{Cecchetti and
   Kharroubi}{2012}]{Cecchetti2012}
 Cecchetti, S.~G. and E.~Kharroubi (2012).
@@ -89,6 +94,13 @@ Meyer, S. (2007).
 \newblock Finance, insurance and real estate firms and the nature of
   agglomeration advantage across canada and within metropolitan toronto.
 \newblock {\em Canadian Journal of Urban Research\/}.
+
+\bibitem[\protect\citeauthoryear{Oksanen, Blanchet, Kindt, Legendre, Minchin,
+  O'Hara, Simpson, Solymos, Stevens, and Wagner}{Oksanen et~al.}{2016}]{Vegan}
+Oksanen, J., F.~G. Blanchet, R.~Kindt, P.~Legendre, P.~R. Minchin, R.~B.
+  O'Hara, G.~L. Simpson, P.~Solymos, M.~H.~H. Stevens, and H.~Wagner (2016).
+\newblock {\em vegan: Community Ecology Package}.
+\newblock R package version 2.3-5.
 
 \bibitem[\protect\citeauthoryear{Panzar and Willig}{Panzar and
   Willig}{1977}]{Panzar1977}

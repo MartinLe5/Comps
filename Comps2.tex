@@ -61,11 +61,15 @@ Spatialization is the use of geographic principles and techniques to examine non
 
 Assuming, \textit{arguendo}, that it's currently possible to create a spatialization model to examine the investment proclivities,as measured as a function of industrial category, of institutional investors, this model take the 25 industrial sub-classes and analyze the data via dendrogram hierarchical clustering algorithm.  This algorithm takes the jaccord index dissimilarity matrix and iteratively clusters the least dissimilar values.  The degree of dissimilarity indicates the hight of the node (horizontal branch of the cluster) in the diagram.  Next the highest value of the newly clustered pair is entered into the new matrix and the algorithm continues until it runs out of pairs to join \cite{pathak2014beginning}.   The resulting dendrogram can be entered into a multidimensional scaling model. 
 
-\begin{enumerate}
-	\item 
-\end{enumerate}
+As for labelling the axes on the plot created by the multidimensional scaling algorithm, the orientation of the plot is purely arbitrary, what matters is the relative proximity between the points as well as the relative axes within the plot since these can lead to categories or underlying groups.  Furthermore, while it is intended to observe this data two dimensional space (as per the follow-on questions), it would be imprudent to no look at the scree plot for 1,2,3,4,5, and 6 dimensions in order to ensure that the kink in the plot is at or about the 2-dimension and that stress levels in the plot are no higher than 0.15 and ideally under 0.1.\cite{Vegan}    
+
 \subsection{}
+
+Assuming that the set of coordinates created in the previous section did not fail the assumption of 2 dimensions and was not overstressed, the points can be used to create surfaces, such as Thiessen polygon/Voronoi diagram.  These polygons are created in such a way that all of the surface area within the polygon is nearer to it's point than any other point in the diagram, and each vertice (intersection of 3 lines) is the equidistant to the three closest points.  
+
 \subsection{}
+
+While Thiessen polygons have bben used in geography and meteorology as a crude form on interpolation, assuming that the entire surface area of the polygon has the same weight may not be appropriate for all uses.  As such, these polygons can be smoothed using Tobler's pycnophylactic interpolation \cite{pycno}
 \subsection{}
 
 
