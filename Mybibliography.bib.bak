@@ -4857,7 +4857,7 @@ The Toyota production system used the post-war Ford River Rouge plant as a case 
 }
 
 @Article{Panzar1977,
-  author    = {John C. Panzar, Robert D. Willig},
+  author    = {John C. Panzar and Robert D. Willig},
   title     = {Economies of Scale in Multi-Output Production},
   year      = {1977},
   volume    = {91},
