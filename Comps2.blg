@@ -2,9 +2,19 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: Comps2.aux
 The style file: chicago.bst
 Database file #1: Mybibliography.bib
 Warning--entry type for "Cecchetti2015" isn't style-file defined
---line 4843 of file Mybibliography.bib
+--line 4842 of file Mybibliography.bib
 Warning--entry type for "Cecchetti2012" isn't style-file defined
---line 4851 of file Mybibliography.bib
+--line 4850 of file Mybibliography.bib
+Warning--entry type for "Suetonius" isn't style-file defined
+--line 4895 of file Mybibliography.bib
+Warning--entry type for "NYT_2011" isn't style-file defined
+--line 4903 of file Mybibliography.bib
+Warning--can't use both author and editor fields in Code1991collapsing
+Warning--no number and no volume in DixonMonk2014
+Warning--page numbers missing in DixonMonk2014
 Warning--no number and no volume in Huber2012
 Warning--page numbers missing in Huber2012
-(There were 4 warnings)
+Warning--no number and no volume in Meyer2007
+Warning--page numbers missing in Meyer2007
+Warning--can't use both author and editor fields in SkupinFabrikant2008
+(There were 12 warnings)

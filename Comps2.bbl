@@ -1,5 +1,11 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{Bagli}{Bagli}{2011}]{NYT_2011}
+Bagli, C.~V. (2011).
+\newblock {Regretting Move, Bank May Return to Manhattan}.
+\newblock New York Times
+  \url{http://www.nytimes.com/2011/06/09/nyregion/ubs-may-move-back-to-manhattan-from-stamford.html}.
+
 \bibitem[\protect\citeauthoryear{Cecchetti and Kharroubi}{Cecchetti and
   Kharroubi}{2012}]{Cecchetti2012}
 Cecchetti, S.~G. and E.~Kharroubi (2012).
@@ -12,12 +18,64 @@ Cecchetti, S.~G. and E.~Kharroubi (2015).
 \newblock Why does financial sector growth crowd out real economic growth?
 \newblock \url{http://www.bis.org/publ/work490.pdf}.
 
+\bibitem[\protect\citeauthoryear{Code}{Code}{1983}]{codethe1983}
+Code, W. (1983).
+\newblock {The Strength of the Centre: Downtown Offices and Metropolitan
+  Decentralization Policy in Toronto}.
+\newblock {\em Environment and Planning A\/}~{\em 15\/}(10), 1361--13.
+
+\bibitem[\protect\citeauthoryear{Code}{Code}{1991}]{Code1991collapsing}
+Code, W. (1991).
+\newblock {\em Information Flows and the processes of attachment and
+  projection, the case for financial intermediaries}.
+\newblock Routledge.
+\newblock Found in: Collapsing Space and Time: Geographic Aspects of
+  Communications and Information.
+
+\bibitem[\protect\citeauthoryear{Dixon and Monk}{Dixon and
+  Monk}{2014}]{DixonMonk2014}
+Dixon, A. and A.~Monk (2014).
+\newblock Frontier finance.
+\newblock {\em Annals of the Association of American Geographers\/}.
+
+\bibitem[\protect\citeauthoryear{Gong and Keenan}{Gong and
+  Keenan}{2012}]{gongthe2012}
+Gong, H. and K.~Keenan (2012).
+\newblock {The Impact of 9/11 on the Geography of Financial Services in New
+  York: A Few Years Later}.
+\newblock {\em The Professional Geographer\/}~{\em 64\/}(3), 370--388.
+
+\bibitem[\protect\citeauthoryear{Green}{Green}{1993}]{greena1993}
+Green, M.~B. (1993).
+\newblock {A Geography of Institutional Stock Ownership in the United States}.
+\newblock {\em Annals of the Association of American Geographers\/}~{\em
+  83\/}(1), 66--89.
+
+\bibitem[\protect\citeauthoryear{Green and Meyer}{Green and
+  Meyer}{1992}]{GreenA1992}
+Green, M.~B. and S.~Meyer (1992).
+\newblock {A Temporal, Spatial and Functional View of Investment Companies in
+  the United States}.
+\newblock {\em The East Lakes Geographer\/}~{\em 27}, 48--64.
+
+\bibitem[\protect\citeauthoryear{Green, {O'Hagan}, and Lefebvre}{Green
+  et~al.}{2015}]{GreenOLef2014}
+Green, M.~B., S.~{O'Hagan}, and M.~Lefebvre (2015).
+\newblock The economic geography of institutional investment in the united
+  states, 2010.
+\newblock {\em Urban Geography\/}~{\em 36\/}(6), 798--822.
+
 \bibitem[\protect\citeauthoryear{Hall}{Hall}{2002}]{hall2002cities}
 Hall, P. (2002).
 \newblock {\em Cities of Tomorrow: An Intellectual History of Urban Planning
   and Design in the Twentieth Century}.
 \newblock Wiley.
 \newblock 576 pages.
+
+\bibitem[\protect\citeauthoryear{Harvey}{Harvey}{1999}]{harvey1999limits}
+Harvey, D. (1999).
+\newblock {\em The limits to capital}.
+\newblock Verso London.
 
 \bibitem[\protect\citeauthoryear{Huber}{Huber}{2012}]{Huber2012}
 Huber, F. (2012).
@@ -26,11 +84,31 @@ Huber, F. (2012).
   spillovers.
 \newblock {\em Journal of Economic Geography\/}.
 
+\bibitem[\protect\citeauthoryear{Meyer}{Meyer}{2007}]{Meyer2007}
+Meyer, S. (2007).
+\newblock Finance, insurance and real estate firms and the nature of
+  agglomeration advantage across canada and within metropolitan toronto.
+\newblock {\em Canadian Journal of Urban Research\/}.
+
 \bibitem[\protect\citeauthoryear{Panzar and Willig}{Panzar and
   Willig}{1977}]{Panzar1977}
 Panzar, J.~C. and R.~D. Willig (1977).
 \newblock Economies of scale in multi-output production.
 \newblock {\em The Quarterly Journal of Economics\/}~{\em 91\/}(3), 481--493.
+
+\bibitem[\protect\citeauthoryear{Skupin and Fabrikant}{Skupin and
+  Fabrikant}{2003}]{SkupinSpatialization2003}
+Skupin, A. and S.~Fabrikant (2003).
+\newblock Spatialization methods: A cartographic research agenda for
+  non-geographic information visualization.
+\newblock {\em Cartogr Geogr Information Sci\/}~{\em 30\/}(2), 99--119.
+
+\bibitem[\protect\citeauthoryear{Skupin and Fabrikant}{Skupin and
+  Fabrikant}{2008}]{SkupinFabrikant2008}
+Skupin, A. and S.~I. Fabrikant (2008).
+\newblock {\em {Spatialization. in: Wilson, J., and Fotheringham, S. (Eds.) The
+  Handbook of Geographical Information Science}}.
+\newblock John Wiley \& Sons.
 
 \bibitem[\protect\citeauthoryear{Smith}{Smith}{2010}]{Smith2010}
 Smith, Y. (2010).
@@ -38,5 +116,16 @@ Smith, Y. (2010).
   and Corrupted Capitalism}\/} (1 ed.).
 \newblock New York: Palgrave Macmillan.
 \newblock 362 pages.
+
+\bibitem[\protect\citeauthoryear{Thomson}{Thomson}{2006}]{Suetonius}
+Thomson, A. (2006).
+\newblock {THE LIVES OF THE TWELVE CAESARS by C. Suetonius Tranquillus}.
+\newblock Revised and corrected by T.Forester, Esq., A.M., Project Gutenberg,
+  \url{http://www.gutenberg.org/files/6400/6400-h/6400-h.htm}.
+
+\bibitem[\protect\citeauthoryear{Tobler}{Tobler}{1970}]{toblera1970}
+Tobler, W.~R. (1970).
+\newblock {A Computer Movie Simulating Urban Growth in the Detroit Region}.
+\newblock {\em Economic Geography\/}~{\em 46}, pp. 234--240.
 
 \end{thebibliography}

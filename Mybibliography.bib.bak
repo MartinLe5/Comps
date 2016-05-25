@@ -1070,17 +1070,16 @@
 }
 
 @Article{codethe1983,
-  Title                    = {The strength of the centre: downtown offices and metropolitan decentralization policy in Toronto},
-  Author                   = {Code, W},
-  Journal                  = {Environment and Planning A},
-  Year                     = {1983},
-  Number                   = {10},
-  Pages                    = {1361 – 13},
-  Volume                   = {15},
-
-  Abstract                 = {Within the context of recent attempts by Toronto to restrict office development in its downtown, the author examines, from several perspectives, the apparent locational conservatism of office activities in the existing core. He begins by arguing that in terms of overall systems efficiency the rationale for the decentralization strategy for Toronto was incomplete and that existing data on the frequencies},
-  Doi                      = {10.1068/a151361},
-  Url                      = {http://dx.doi.org/10.1068/a151361}
+  author   = {Code, William},
+  title    = {{The Strength of the Centre: Downtown Offices and Metropolitan Decentralization Policy in Toronto}},
+  year     = {1983},
+  volume   = {15},
+  number   = {10},
+  pages    = {1361--13},
+  doi      = {10.1068/a151361},
+  url      = {http://dx.doi.org/10.1068/a151361},
+  abstract = {Within the context of recent attempts by Toronto to restrict office development in its downtown, the author examines, from several perspectives, the apparent locational conservatism of office activities in the existing core. He begins by arguing that in terms of overall systems efficiency the rationale for the decentralization strategy for Toronto was incomplete and that existing data on the frequencies},
+  journal  = {Environment and Planning A},
 }
 
 @Book{coe2007economic,
@@ -4665,12 +4664,12 @@ at the Oxford China Business Forum, Beijing, 9 September 2010.},
 
 @Article{DixonMonk2014,
   author   = {Dixon, {AD} and Monk, {AHB}},
-  title    = {Frontier finance},
+  title    = {Frontier Finance},
   year     = {2014},
   doi      = {10.1080/00045608.2014.912543},
   abstract = {A growing community of long-time-horizon institutional investors that includes sovereign wealth funds, pension funds, and other beneficiary institutions located in cities outside of the major international financial centers {(IFCs)} is pushing back against the misaligned  ...},
   file     = {C:\Users\Martin\Documents\ReadCube Media\Dixon et al-2014-Annals of the Association of American.pdf},
-  journal  = {Annals of the Association of American …},
+  journal  = {Annals of the Association of American Geographers},
 }
 
 @Article{Branzanti2015,
@@ -4868,6 +4867,66 @@ The Toyota production system used the post-war Ford River Rouge plant as a case 
   abstract  = {I. Introduction, 481.--II. Counterexamples, 482.--III. Economies of scale, 484.--IV. Technological regularity conditions, 487.--V. The profitability of marginal cost pricing, 488.--VI. Concluding remarks, 492.},
   journal   = {The Quarterly Journal of Economics},
   publisher = {Oxford University Press},
+}
+
+@Article{Winter80,
+  author    = {J. M. Winter},
+  title     = {Military Fitness and Civilian Health in Britain during the First World War},
+  year      = {1980},
+  volume    = {15},
+  number    = {2},
+  pages     = {211-244},
+  issn      = {00220094},
+  url       = {http://www.jstor.org/stable/260511},
+  journal   = {Journal of Contemporary History},
+  publisher = {Sage Publications, Ltd.},
+}
+
+@Book{Code1991collapsing,
+  author    = {William Code},
+  title     = {Information Flows and the processes of attachment and projection, the case for financial intermediaries},
+  year      = {1991},
+  editor    = {Brunn, Stanley D and Leinbach, Thomas R},
+  note      = {Found in: Collapsing Space and Time: Geographic Aspects of Communications and Information},
+  publisher = {Routledge},
+  pages     = {pp. 111-131},
+}
+
+@WWW{Suetonius,
+  author    = {Alexander Thomson},
+  title     = {{THE LIVES OF THE TWELVE CAESARS by C. Suetonius Tranquillus}},
+  year      = {2006},
+  note      = {Revised and corrected by T.Forester, Esq., A.M., Project Gutenberg, \url{http://www.gutenberg.org/files/6400/6400-h/6400-h.htm}},
+  publisher = {Project Gutenberg},
+}
+
+@WWW{NYT_2011,
+  author = {Charles V. Bagli},
+  title  = {{Regretting Move, Bank May Return to Manhattan}},
+  year   = {2011},
+  note   = {New York Times \url{http://www.nytimes.com/2011/06/09/nyregion/ubs-may-move-back-to-manhattan-from-stamford.html}},
+}
+
+@Article{Skupin_Spatialization_2003,
+  author  = {Skupin, Andr{\'e} and Fabrikant, Sara},
+  title   = {Spatialization Methods: A Cartographic Research Agenda for Non-geographic Information Visualization},
+  year    = {2003},
+  volume  = {30},
+  number  = {2},
+  pages   = {99-119},
+  issn    = {1523-0406},
+  doi     = {10.1559/152304003100011081},
+  file    = {C:\Users\Martin\Documents\ReadCube Media\Skupin et al-2003-Cartogr Geogr Information Sci.pdf},
+  journal = {Cartogr Geogr Information Sci},
+}
+
+@Book{SkupinFabrikant2008,
+  author    = {Andr\'{e} Skupin and Sara I. Fabrikant},
+  title     = {{Spatialization. in: Wilson, J., and Fotheringham, S. (Eds.) The Handbook of Geographical Information Science}},
+  year      = {2008},
+  editor    = {Wilson, John P and Fotheringham, A Stewart},
+  publisher = {John Wiley \& Sons},
+  pages     = {pp 61-79},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
