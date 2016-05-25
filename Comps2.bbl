@@ -1,8 +1,8 @@
 \begin{thebibliography}{}
 
 \bibitem[\protect\citeauthoryear{Cecchetti and Kharroubi}{Cecchetti and
-  Kharroubi}{2013}]{Cecchetti2013}
-Cecchetti, S.~G. and E.~Kharroubi (2013).
+  Kharroubi}{2012}]{Cecchetti2012}
+Cecchetti, S.~G. and E.~Kharroubi (2012).
 \newblock Reassessing the impact of finance on growth.
 \newblock \url{http://www.bis.org/publ/work381.pdf}.
 
@@ -11,6 +11,19 @@ Cecchetti, S.~G. and E.~Kharroubi (2013).
 Cecchetti, S.~G. and E.~Kharroubi (2015).
 \newblock Why does financial sector growth crowd out real economic growth?
 \newblock \url{http://www.bis.org/publ/work490.pdf}.
+
+\bibitem[\protect\citeauthoryear{Huber}{Huber}{2012}]{Huber2012}
+Huber, F. (2012).
+\newblock Do clusters really matter for innovation practices in information
+  technology? questioning the significance of technological knowledge
+  spillovers.
+\newblock {\em Journal of Economic Geography\/}.
+
+\bibitem[\protect\citeauthoryear{Panzar and Willig}{Panzar and
+  Willig}{1977}]{Panzar1977}
+Panzar, J.~C. and R.~D. Willig (1977).
+\newblock Economies of scale in multi-output production.
+\newblock {\em The Quarterly Journal of Economics\/}~{\em 91\/}(3), 481--493.
 
 \bibitem[\protect\citeauthoryear{Smith}{Smith}{2010a}]{Yves2010_Myths}
 Smith, Y. (2010a).
